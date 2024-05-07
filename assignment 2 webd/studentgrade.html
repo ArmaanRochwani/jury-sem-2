@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       
+        function calculateGrade(marks) {
+            if (marks >= 91 && marks <= 100) {
+                return "A*";
+            } else if (marks >= 81 && marks <= 90) {
+                return "A";
+            } else if (marks >= 71 && marks <= 80) {
+                return "B";
+            } else if (marks >= 61 && marks <= 70) {
+                return "C";
+            } else if (marks >= 51 && marks <= 60) {
+                return "D";
+            } else if (marks >= 41 && marks <= 50) {
+                return "E";
+            } else {
+                return "Fail";
+            }
+        }
+        let students = [
+            { name: "Aaditya Raj Singh", marks: 98 },
+            { name: "Armaan", marks: 81 },
+            { name: "Abhisek", marks: 71 },
+            { name: "Kohli", marks:63 },
+            { name: "Simran", marks:53 },
+            { name: "Dhoni", marks:43 },
+            { name: "Hardik", marks: 40 },
+        ]
+        for (let i = 0; i < students.length; i++) {
+            var student = students[i];
+            var grade = calculateGrade(student.marks);
+            console.log(student.name + " - " + grade);
+        }
+    </script>
+</body>
+
+</html>

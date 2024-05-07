@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let products = [
+            { name: "Product1", price: 100 },
+            { name: "Product2", price: 150 },
+            { name: "Product3", price: 140 },
+            { name: "Product4", price: 787 },
+        ]
+        products.forEach(element => {
+            console.log(element);
+        });
+        function findMinMax(products) {
+            let maxProduct = products.reduce((prev, current) => (prev.price > current.price) ? prev : current);
+            let minProduct = products.reduce((prev, current) => (prev.price < current.price) ? prev : current);
+
+            console.log("Product with maximum amount:", maxProduct);
+            console.log("Product with minimum amount:", minProduct);
+        }
+
+        findMinMax(products)
+    </script>
+</body>
+
+</html>
