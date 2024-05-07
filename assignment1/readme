@@ -1,0 +1,309 @@
+<h1> Description: The index page is usually the first page that a user sees when he/she visits a website. This is how our index page should look like: </h1>
+
+This is a web page contains three sections:
+
+<b> Header <br>
+Content <br>
+Footer <br></b>
+
+Header: This is the first section of the webpage and it contains the
+<b><em> “The Online Cloth Shopping Store” </b></em> as a website name and navigation links to login and signup page.
+
+Content: This section has two parts banner image with a Shop Now button over it and item category listing section.
+
+Footer: The footer contains text <b><em>“Copyright @ The Online Cloth Shopping Store All Rights Reserved | Contact Us: +91 80000 00000 ” </em></b>.
+
+Approach:
+Here is a starter template:HTML
+<h2> Index.html </h2>
+
+```html
+<!DOCTYPE html>
+<head>
+<!-- The page has a title The Online Cloth Shopping Store -->
+<title>Online cloth shopping Store</title>
+<!---- External css file index.css placed in the folder css is linked-->
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+</body>
+</html>
+```
+
+
+
+In the above template, the page title is mentioned as <b><em> “The Online Cloth Shopping Store” </b></em> and an external CSS file ```style.css``` in linked.
+
+The basic CSS in ``Style.css`` would be
+
+```css
+body{
+width: 100%;
+height: 100%;
+margin: 0;
+}
+a{
+text-decoration: none;
+background-color: transparent;
+color:#ededed;
+}
+```
+
+##
+
+<b> <h1>Header</h1> </b>
+
+1. Inside the ```<body>``` create a div (using ```<div>``` tag) with class header assigned to Class header would contain the following
+
+```css
+background-color: #000;
+color:#fff;
+border-color:#080808;
+min-height:50px;
+border:1px solid transparent;
+```
+
+##
+
+2. Inside the div with class header, create a div with class inner-header which will free some space on the sides of the header.
+Class inner-header would contain the following
+
+```css
+width:80%;
+margin:auto;
+```
+
+##
+
+3. Div with class ```inner-header``` will contain ```three``` div
+
+##
+
+4. First div element will have class ```logo``` with content <b><em> “The Online Cloth Shopping Store” </b></em> which will be a Class logo will contain the following
+
+```css
+float: right;
+font-size:14px;
+height: 50px;
+padding: 15px 15px;
+font-size:16px;
+font-weight: bold;
+```
+
+##
+
+5. Second div element will have content ```Sign up``` and third div element will have content ```Login``` with same class ```header-link``` to both div elements. Both Signup and login will be links.Class ``header-link`` will contain the following
+
+```css
+float: right;
+font-size:14px;
+height: 50px;
+padding: 15px 15px;
+font-size:16px;
+font-weight: bold;
+```
+
+##
+
+6. This marks the end to inner-header div element and header div Now, you have made the header of the web page7.Start div tag with Class content will have the following
+
+```css
+min-height:600px;
+```
+
+##
+
+7. Div element with class content will contain div element with class banner-
+
+```css
+padding-bottom: 50px;
+margin-bottom: 20px;
+text-align: center;
+color: #f8f8f8;
+background: url(image_name) no-repeat center;
+background-size: cover;
+```
+
+Class banner-image will have the following
+
+##
+
+8. Div element with class banner-image will have one div element with class inner-banner-
+
+Class inner-banner-image will have the following
+
+```css
+padding-top:12%;
+width:80%;
+margin:auto;
+```
+##
+
+9. Start a div element inside the div element with class inner-banner-image with class
+
+Class banner_content will have the following
+
+```css
+position: relative;
+padding-top: 6%;
+padding-bottom: 6%;
+overflow:hidden;
+margin-bottom: 12%;
+background-color: rgba(0, 0, 0, 0.7);
+max-width: 660px;
+```
+##
+
+10. Add H1 tag inside this div element with content <b>``“We sell ”``</b>.
+##
+11. Add p tag with content <b>``“Flat 40% OFF on premium brands”``</b>.
+##
+12. Add a link after p Link will contain class button.
+
+```css
+color: #fff;
+background-color:#c9302c;
+border-color: #ac2925;
+box-shadow: inset 0 3px 5px rgba(0, 0, 0, 125);
+padding: 10px 16px;
+font-size: 18px;
+border-radius: 6px;
+```
+
+Class button will have the following
+
+##
+
+13. Close all the div elements till the div element with class banner_image. Now, you have made the banner.
+
+##
+
+14. After writing the above HTML and CSS code, Web page should look like this:
+
+
+![Banner](images/readme/banner.png)
+
+<b> <h1>Content</h1></b>
+
+##
+
+15. Start a div element with class This class will enclose the images and their div elements.
+
+##
+
+16. Class container will contain the following
+
+```css
+width:90%;
+margin:auto;
+overflow:hidden;
+```
+
+##
+
+17. Start a div element inside the container div element with class
+
+```css
+width:30%;
+display: block;
+padding: 4px;
+margin-bottom: 20px;
+line-height: 1.42857143;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 4px;
+float:left;
+margin-left:1%;
+```
+
+Class items will have the following
+
+##
+
+18. Start the anchor All the next HTML elements will be inside the anchor tag.
+
+##
+
+19. Start the image Class thumbnail is assigned to img tag.
+Class thumbnail will contain the following
+```css
+    width: 100%;
+```
+
+##
+
+20. Start a div element after image tag with .Class caption will contain the following
+
+```css
+color:#000;
+padding:0px 10px 10px;
+font-weight: bold;
+text-align: center;
+```
+##
+
+21. Add H2 tag with content “Watches” and paragraph tag with content “Original watches from the best brands.”.
+
+```html
+<div class="items">
+<a href="#">
+<img src="img/1.jpg" alt="" class="thumbnail">
+<div class="caption">
+<h2>Cameras</h2>
+<p>Choose among the best available in the world.</p>
+</div>
+</a>
+</div>
+```
+
+Close the caption div element, anchor tag and items The HTML code will be:
+
+##
+
+22. Replicate this div element with class items and HTML content inside it two IT will create three div elements. Change the content and paragraph for other two elements.
+
+##
+
+23. Close the container div element and content div element
+
+##
+
+24. After writing the above HTML and CSS code, your page should look like this:
+
+![Body Content](images/readme/Content.png)
+
+##
+
+25. One Image showing overall website look with all products
+
+<b> <h1>Footer</h1> </b>
+
+##
+
+26. Start the footer
+
+Footer element will have the following
+
+##
+
+27. Start a div element with the class This class is already used before.
+
+##
+
+28. Add a paragraph tag with content in Content is “Copyright © Online Cloth Store. All Rights Reserved | Contact Us: +91 80000 00000”.
+##
+
+29. Close the container div element, footer
+##
+
+30. Close the body tag and HTML
+##
+
+31. Hence, your web page is
+
+![Website Demo](images/readme/demo.png)
+##
+
+
+
+<h1 style="font-size:100px;     font-family: cursive;" align="center">THANKYOU</h1>
